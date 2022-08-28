@@ -1,4 +1,5 @@
-# Welcome to your VS Code Extension
+# Welcome to ICMC assembly language support
+Here is a quick guide.
 
 ## What's in the folder
 
