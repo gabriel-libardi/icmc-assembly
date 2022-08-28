@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.assembly.icmc",
 	"name": "ICMC assembly",
 	"patterns": [
 		{
@@ -11,10 +11,80 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.icmc-assembly",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.load.icmc-assembly",
+					"match": "\\b(load|loadn|loadi)\\b"
+				},
+				{
+					"name": "keyword.store.icmc-assembly",
+					"match": "\\b(store|storen|storei|mov)\\b"
+				},
+				{
+					"name": "keyword.store.char.icmc-assembly",
+					"match": "\\b(inchar|outchar)\\b"
+				},
+				{
+					"name": "keyword.store.string.icmc-assembly",
+					"match": "\\b(input|output)\\b"
+				},
+				{
+					"name": "keyword.add.icmc-assembly",
+					"match": "\\b(add|adc)\\b"
+				},
+				{
+					"name": "keyword.sub.icmc-assembly",
+					"match": "\\b(sub|subc)\\b"
+				},
+				{
+					"name": "keyword.multiplicative.operations.icmc-assembly",
+					"match": "\\b(mul|div)\\b"
+				},
+				{
+					"name": "keyword.inc.icmc-assembly",
+					"match": "\\b(inc|dec|mod|and|or|xor|not)\\b"
+				},
+				{
+					"name": "keyword.shift.icmc-assembly",
+					"match": "\\b(shiftl0|shiftl1|shiftr0|shiftr1|rotl|rotr)\\b"
+				},
+				{
+					"name": "keyword.cmp.icmc-assembly",
+					"match": "\\b(cmp)\\b"
+				},
+				{
+					"name": "keyword.bra.icmc-assembly",
+					"match": "\\b(bra|beq|bne|bz|bnz|bc|bnc|bgt|blt|beg|bel|bov|bno)\\b"
+				},
+				{
+					"name": "keyword.jmp.icmc-assembly",
+					"match": "\\b(jmp|jeq|jne|jz|jnz|jc|jnc|jgr|jle|jeg|jel|jov|jno|jdz|jn)\\b"
+				},
+				{
+					"name": "keyword.call.icmc-assembly",
+					"match": "\\b(call|ceq|cne|cz|cnz|cc|cnc|cgr|cle|ceg|cel|cov|cno|cdz|cn)\\b"
+				},
+				{
+					"name": "keyword.set.icmc-assembly",
+					"match": "\\b(seq|set|sne|sz|snz|sc|snc|sgt|slt|seg|sel|sov|sno)\\b"
+				},
+				{
+					"name": "keyword.callr&jumpr.icmc-assembly",
+					"match": "\\b(callr|jmpr)\\b"
+				},
+				{
+					"name": "keyword.rts.icmc-assembly",
+					"match": "\\b(rts|rti)\\b"
+				},
+				{
+					"name": "keyword.push&pop.icmc-assembly",
+					"match": "\\b(push|pop|nop|halt|breakp)\\b"
+				},
+				{
+					"name": "keyword.setc.icmc-assembly",
+					"match": "\\b(setc|clearc)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.icmc-assembly",
@@ -27,6 +97,5 @@
 				}
 			]
 		}
-	},
-	"scopeName": "grammar.tusca"
+	}
 }
