@@ -1,65 +1,41 @@
-# icmc-assembly README
-
-This is the README for your extension "icmc-assembly". After writing up a brief description, we recommend including the following sections.
+# Welcome to ICMC assembly language support for VSCode (and VSCodium)
+This is a language extension designed to assist students taking the 
+[Organization and Architecture of Computers](https://gitlab.com/simoesusp/disciplinas/-/tree/master/SSC0902-ENG_COMP_Organizacao-e-Arquitetura-de-Computadores) course or equivalent at University of São Paulo, São Carlos. It adds support for the RISC assembly language made for the [ICMC-Processor](https://github.com/simoesusp/Processador-ICMC), a complete computer architecture developed by students and researchers at the University to teach the subject.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* [TODO] Syntax highlighting;
+* [TODO] [TUSCA Simulator's preprocessor](https://github.com/lucasgpulcinelli/Tusca_Simulator);
+* [TODO] Code snippets;
+* [TODO] Integration with [ICMC's processor simulator](https://github.com/simoesusp/Processador-ICMC)
 
-For example if there is an image subfolder under your extension project workspace:
+## How to install
+You can install it manually by cloning the repository,
+```
+git clone https://github.com/gabriel-libardi/icmc-assembly
+```
+and moving it to the appropriate path:
+```
+mv icmc-assembly ~/.vscode/extensions
+```
+or if you are using VSCodium:
+```
+mv icmc-assembly ~/.vscode-oss/extensions
+```
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Alternatively, you can simply install it from the [Microsoft marketplace](EmptyURL) or the [VSCodium marketplace](EmptyURL) [TODO].
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+* [TUSCA Simulator's preprocessor](https://github.com/lucasgpulcinelli/Tusca_Simulator)
+* [ICMC-Processor Simulator](https://github.com/simoesusp/Processador-ICMC/tree/master/Install_Packages)
 
 ## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+[TODO]
 
 ## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Nothing is implemented yet.
 
 ## Release Notes
+No releases so far.
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
