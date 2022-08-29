@@ -1,5 +1,6 @@
 {
-	"scopeName": "source.assembly.icmc",
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.ICMCassembly",
 	"name": "ICMC assembly",
 	"patterns": [
 		{
@@ -7,6 +8,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#registers"
 		}
 	],
 	"repository": {
@@ -92,8 +96,22 @@
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.icmc-assembly",
-					"match": "\\\\."
+					"name": "anystring.icmc-assembly",
+					"match": ".*"
+				}
+			]
+		},
+
+		"registers": {
+			"name": "register.icmc-assembly",
+			"patterns": [
+				{
+					"name": "numeric.register.icmc-assembly",
+					"match": "(R[0-7])"
+				},
+				{
+					"name": "special.register.icmc-assembly",
+					"match": "(FR|SP)"
 				}
 			]
 		}
