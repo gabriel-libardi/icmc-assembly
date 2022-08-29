@@ -2,6 +2,7 @@
   "name": "icmc-assembly",
   "displayName": "ICMC assembly",
   "description": "ICMC assembly language support for Visual Studio Code (with tusca's preprocessor features)",
+  "icon": "images/icon.jpg",
   "version": "0.1",
   "engines": {
     "vscode": "^1.70.0"
@@ -18,7 +19,7 @@
     }],
     "grammars": [{
       "language": "icmc-assembly",
-      "scopeName": "source.assembly.icmc",
+      "scopeName": "source.icmc.assembly",
       "path": "./syntaxes/icmc-assembly.tmLanguage.json"
     }]
   }
