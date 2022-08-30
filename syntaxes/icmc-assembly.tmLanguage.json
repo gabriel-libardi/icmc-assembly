@@ -105,12 +105,12 @@
 		},
 		"strings": {
 			"name": "string.quoted.double.icmc-assembly",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "(\")",
+			"end": "(\")",
 			"patterns": [
 				{
-					"name": "anystring.icmc-assembly",
-					"match": ".*"
+					"name": "string.quoted.icmc-assembly",
+					"match": "\\\\."
 				}
 			]
 		},
@@ -119,7 +119,7 @@
 			"patterns": [
 				{
 					"name": "storage.type",
-					"match": "(R[0-7])|(FR|SP)"
+					"match": "((r|R)[0-7])|(FR|SP)"
 				}
 			]
 		},
@@ -142,7 +142,6 @@
 				"name": "comment",
 				"match": "(;)(.*)"
 		}]},
-
 
 		"static":{
 			"patterns":[{
