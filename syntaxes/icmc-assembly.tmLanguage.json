@@ -11,6 +11,15 @@
 		},
 		{
 			"include": "#registers"
+		},
+		{
+			"include":"#constants"
+		},
+		{
+			"include":"#comments"
+		},
+		{
+			"include": "#static"
 		}
 	],
 	"repository": {
@@ -87,6 +96,10 @@
 				{
 					"name": "keyword.setc.icmc-assembly",
 					"match": "\\b(setc|clearc)\\b"
+				},
+				{
+					"name": "keyword.variables.icmc-assembly",
+					"match": "\\b(var)\\b"
 				}
 			]
 		},
@@ -103,17 +116,40 @@
 		},
 
 		"registers": {
-			"name": "register.icmc-assembly",
 			"patterns": [
 				{
-					"name": "numeric.register.icmc-assembly",
-					"match": "(R[0-7])"
-				},
-				{
-					"name": "special.register.icmc-assembly",
-					"match": "(FR|SP)"
+					"name": "storage.type",
+					"match": "(R[0-7])|(FR|SP)"
 				}
 			]
+		},
+
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "(#)(\\d+)"
+				},
+				{
+					"name": "constant.character",
+					"match": "(#)('.')"
+				}
+			]
+		},
+
+		"comments":{
+			"patterns": [{
+				"name": "comment",
+				"match": "(;)(.*)"
+		}]},
+
+
+		"static":{
+			"patterns":[{
+				"name": "storage.modifier",
+				"match": "\\b(static)\\b"
+			}]
 		}
+
 	}
 }

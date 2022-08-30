@@ -4,7 +4,7 @@ This is a language extension designed to assist students taking the
 
 ## Features
 
-* [TODO] Syntax highlighting;
+* Syntax highlighting;
 * [TODO] [TUSCA Simulator's preprocessor](https://github.com/lucasgpulcinelli/Tusca_Simulator);
 * [TODO] Code snippets;
 * [TODO] Integration with [ICMC's processor simulator](https://github.com/simoesusp/Processador-ICMC)
