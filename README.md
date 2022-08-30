@@ -34,8 +34,10 @@ Alternatively, you can simply install it from the [Microsoft marketplace](EmptyU
 [TODO]
 
 ## Known Issues
-Nothing is implemented yet.
+
+* No syntax highlighting for labels. 
+* Most of the extensions is not implemented yet
 
 ## Release Notes
-No releases so far.
+Basic syntax highlighting is now supported!
 
