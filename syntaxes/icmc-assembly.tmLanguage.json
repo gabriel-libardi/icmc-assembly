@@ -119,7 +119,7 @@
 			"patterns": [
 				{
 					"name": "storage.type",
-					"match": "((r|R)[0-7])|(FR|SP)"
+					"match": "(\\s|,)((r|R)[0-7])|(FR|SP)(\\s|,)"
 				}
 			]
 		},
