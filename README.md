@@ -35,9 +35,9 @@ Alternatively, you can simply install it from the [Microsoft marketplace](EmptyU
 
 ## Known Issues
 
-* No syntax highlighting for labels. 
-* Most of the extensions is not implemented yet
+* Most of the extension's features are not implemented yet;
+* The syntax highlighting may not be consistent with the one used in Sublime.
 
 ## Release Notes
-Basic syntax highlighting is now supported!
+* Added highlighting for "functions" (line labels), so now there is full syntax highlighting support for ICMC assembly!S
 

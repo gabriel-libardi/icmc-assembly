@@ -20,6 +20,9 @@
 		},
 		{
 			"include": "#static"
+		},
+		{
+			"include": "#function"
 		}
 	],
 	"repository": {
@@ -118,7 +121,7 @@
 		"registers": {
 			"patterns": [
 				{
-					"name": "storage.type",
+					"name": "storage.type.icmc-assembly",
 					"match": "(\\s|,)((r|R)[0-7])|(FR|SP)(\\s|,)"
 				}
 			]
@@ -127,28 +130,34 @@
 		"constants": {
 			"patterns": [
 				{
-					"name": "constant.numeric",
+					"name": "constant.numeric.icmc-assembly",
 					"match": "(#)(\\d+)"
 				},
 				{
-					"name": "constant.character",
+					"name": "constant.character.icmc-assembly",
 					"match": "(#)('.')"
 				}
 			]
 		},
 
-		"comments":{
+		"comments": {
 			"patterns": [{
-				"name": "comment",
+				"name": "comment.icmc-assembly",
 				"match": "(;)(.*)"
 		}]},
 
-		"static":{
+		"static": {
 			"patterns":[{
-				"name": "storage.modifier",
+				"name": "storage.modifier.icmc-assembly",
 				"match": "\\b(static)\\b"
 			}]
-		}
+		},
 
+		"function": {
+			"patterns": [{
+				"name": "support.function.declaration.icmc-asssembly",
+				"match": "^(\\s*)(\\w+):(\\s*)$"
+			}]
+		}
 	}
 }
