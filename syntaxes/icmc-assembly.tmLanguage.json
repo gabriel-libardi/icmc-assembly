@@ -103,6 +103,10 @@
 				{
 					"name": "keyword.variables.icmc-assembly",
 					"match": "\\b(var)\\b"
+				},
+				{
+					"name": "keyword.define.icmc-assembly",
+					"match": "\\b(#define)\\b"
 				}
 			]
 		},

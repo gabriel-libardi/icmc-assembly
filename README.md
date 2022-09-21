@@ -6,6 +6,7 @@ This is a language extension designed to assist students taking the
 
 * Syntax highlighting;
 * [TODO] [TUSCA Simulator's preprocessor](https://github.com/lucasgpulcinelli/Tusca_Simulator);
+* Intellisense
 * [TODO] Code snippets;
 * [TODO] Integration with [ICMC's processor simulator](https://github.com/simoesusp/Processador-ICMC)
 
