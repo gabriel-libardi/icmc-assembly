@@ -23,6 +23,9 @@
 		},
 		{
 			"include": "#function"
+		},
+		{
+			"include": "#macros"
 		}
 	],
 	"repository": {
@@ -103,10 +106,6 @@
 				{
 					"name": "keyword.variables.icmc-assembly",
 					"match": "\\b(var)\\b"
-				},
-				{
-					"name": "keyword.define.icmc-assembly",
-					"match": "\\b(#define)\\b"
 				}
 			]
 		},
@@ -132,6 +131,7 @@
 		},
 
 		"constants": {
+			"disabled": 1,
 			"patterns": [
 				{
 					"name": "constant.numeric.icmc-assembly",
@@ -139,7 +139,7 @@
 				},
 				{
 					"name": "constant.character.icmc-assembly",
-					"match": "(#)('.')"
+					"match": "(#)('\\S')"
 				}
 			]
 		},
@@ -162,6 +162,46 @@
 				"name": "support.function.declaration.icmc-asssembly",
 				"match": "^(\\s*)(\\w+):(\\s*)$"
 			}]
+		},
+
+		"macros": {
+			"patterns": [{
+				"name": "keyword.define.icmc-assembly",
+				"match":"\\s*(#define)\\s*"
+				},
+				{
+					"name":"keyword.ifndef.icmc-assembly",
+					"match":"\\s*(#ifndef)\\s*"
+				},
+				{
+					"name": "keyword.endif.icmc-assembly",
+					"match": "\\s*(#endif)\\s*"
+				},
+				{
+					"name": "keywork.control.ifdef.icmc-assembly",
+					"match": "\\s*(#ifdef)\\s*"
+				},
+				{
+					"name": "keyword.ifdefined.icmc-assembly",
+					"match": "\\s*(#(if)|(elif)\\s+defined)\\s*"
+				},
+				{
+					"name": "keyword.if.icmc-assembly",
+					"match": "\\s*(#if)\\s*"
+				},
+				{
+					"name": "keyword.elif.icmc-assembly",
+					"match": "\\s*(#elif)\\s*"
+				},
+				{
+					"name": "keyword.else.icmc-assembly",
+					"match": "\\s*(#else)\\s*"
+				},
+				{
+					"name": "keyword.undef.icmc-assembly",
+					"match": "\\s*(#undef)\\s*"
+				}
+			]
 		}
 	}
 }

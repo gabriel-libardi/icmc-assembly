@@ -10,10 +10,8 @@ cmp r1, r2; Isso é um comentário
 #define msg_len 13
 msg: string "Hello, World!"
 
-
 #define width_start_print $eval(sw//2-int(defs["msg_len"])//2-1)
 #define starting_pos $position(width_start_print,eval(sh//2-1))
-
 
 main:
     loadn r0, $position(0,eval(sh//2-1)); initial position for text
