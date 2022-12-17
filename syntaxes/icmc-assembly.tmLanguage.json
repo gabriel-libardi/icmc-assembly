@@ -166,40 +166,44 @@
 
 		"macros": {
 			"patterns": [{
-				"name": "keyword.define.icmc-assembly",
-				"match":"\\s*(#define)\\s*"
+				"name": "keyword.control.directive.macro.icmc-assembly",
+				"match":"\\s*(#define)"
 				},
 				{
-					"name":"keyword.ifndef.icmc-assembly",
-					"match":"\\s*(#ifndef)\\s*"
+					"name":"keyword.control.directive.macro.icmc-assembly",
+					"match":"\\s*(#ifndef)"
 				},
 				{
-					"name": "keyword.endif.icmc-assembly",
-					"match": "\\s*(#endif)\\s*"
+					"name": "keyword.control.directive.macro.icmc-assembly",
+					"match": "\\s*(#endif)"
 				},
 				{
-					"name": "keywork.control.ifdef.icmc-assembly",
-					"match": "\\s*(#ifdef)\\s*"
+					"name": "keywork.control.directive.macro.icmc-assembly",
+					"match": "\\s*(#ifdef)"
 				},
 				{
-					"name": "keyword.ifdefined.icmc-assembly",
-					"match": "\\s*(#(if)|(elif)\\s+defined)\\s*"
+					"name": "keyword.control.directive.macro.icmc-assembly",
+					"match": "\\s*(#(if)|(elif)\\s+defined)"
 				},
 				{
-					"name": "keyword.if.icmc-assembly",
-					"match": "\\s*(#if)\\s*"
+					"name": "keyword.control.directive.macro.icmc-assembly",
+					"match": "\\s*(#if)"
 				},
 				{
-					"name": "keyword.elif.icmc-assembly",
-					"match": "\\s*(#elif)\\s*"
+					"name": "keyword.control.directive.macro.icmc-assembly",
+					"match": "\\s*(#elif)"
 				},
 				{
-					"name": "keyword.else.icmc-assembly",
-					"match": "\\s*(#else)\\s*"
+					"name": "keyword.control.directive.macro.icmc-assembly",
+					"match": "\\s*(#else)"
 				},
 				{
-					"name": "keyword.undef.icmc-assembly",
-					"match": "\\s*(#undef)\\s*"
+					"name": "keyword.control.directive.macro.icmc-assembly",
+					"match": "\\s*(#undef)"
+				},
+				{
+					"name": "meta.preprocessor.macro",
+					"match": "(?<=(#define)|(#ifndef)|(#endif)|(#ifdef)|(#if)|(#elif)|(#else)|(#undef))\\s*\\w+"
 				}
 			]
 		}
