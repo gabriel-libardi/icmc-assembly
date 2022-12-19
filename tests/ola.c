@@ -1,1 +1,0 @@
-#define OLA 23
